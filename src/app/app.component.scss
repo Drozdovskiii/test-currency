@@ -1,0 +1,15 @@
+$main_color : red;
+
+.logo {
+    color: $main_color;
+
+}
+
+%border-ext {
+    border: 1px solid green;
+}
+
+.ext {
+    @extend %border-ext;
+    color: $main_color
+}
