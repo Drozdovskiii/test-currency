@@ -1,0 +1,2 @@
+export const LEFT_CURRENCY_DEFAULT = 'BYN';
+export const RIGHT_CURRENCY_DEFAULT = 'USD';
