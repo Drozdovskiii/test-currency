@@ -1,5 +1,8 @@
 <form>
   <div class="currency-input">
+
+   
+
     <div class="select-valute">
 
       <div class="select-valute-left">
@@ -14,13 +17,15 @@
                 onerror="this.onerror = null; 
               this.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEBbSVxcpEyRn-BgUu7Sxrdtpq6yq7c30pm6m2xPMLHiJOad4rNzaZ3fATrCrGcy3oY&usqp=CAU'">
 
-              <strong>{{ currency.value }}</strong> {{ currency.label }}
+              <strong>{{ currency.value }}</strong> - {{ currency.label }}
 
             </mat-option>
           </mat-select>
         </mat-form-field>
 
       </div>
+
+      <mat-icon class="icon" fontIcon="swap_horiz"></mat-icon>
 
       <div class="select-valute-right">
 
@@ -33,7 +38,7 @@
                 onerror="this.onerror = null; 
               this.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEBbSVxcpEyRn-BgUu7Sxrdtpq6yq7c30pm6m2xPMLHiJOad4rNzaZ3fATrCrGcy3oY&usqp=CAU'">
 
-              <strong>{{ currency.value }}</strong> {{ currency.label }}
+              <strong>{{ currency.value }}</strong> - {{ currency.label }}
 
             </mat-option>
           </mat-select>
@@ -41,7 +46,7 @@
       </div>
 
     </div>
-
+   
     <div class="input-valute">
 
 
@@ -49,16 +54,16 @@
         <mat-form-field appearance="fill">
           <input type="number" matInput placeholder="Введите валюту"
             [value]="(currentState$ | async)?.leftCurrencyAmount"
-            (change)="changeValue(leftInput.value, 'leftCurrencyAmount')" #leftInput>
+            (input)="changeValue(leftInput.value, 'leftCurrencyAmount')" #leftInput>
         </mat-form-field>
       </div>
-
+      <mat-icon class="icon" fontIcon="swap_horiz"></mat-icon>
 
       <div class="inpit-valute-right">
         <mat-form-field appearance="fill">
           <input type="number" matInput placeholder="Введите валюту"
             [value]="(currentState$ | async)?.rightCurrencyAmount"
-            (change)="changeValue(rightInput.value, 'rightCurrencyAmount')" #rightInput>
+            (input)="changeValue(rightInput.value, 'rightCurrencyAmount')" #rightInput>
         </mat-form-field>
       </div>
 

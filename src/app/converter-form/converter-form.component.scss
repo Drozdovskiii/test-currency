@@ -1,22 +1,27 @@
 %form-parent-class {
-
     display: flex;
-    justify-content: center;
+
     font-size: x-large;
     margin-top: 20px;
-    
+    margin-left: 20px;
 }
 
 .input-valute,
-.select-valute,
+.select-valute {
+@extend %form-parent-class;
+}
+
+
+
+.icon {
+   display: flex;
+   align-self:center;
+  
+}
+
 .date-field {
-    @extend %form-parent-class;
-
-
+    margin-left: 20px;
+    font-size:small;
+    
+    
 }
-
-.input-valute-left,
-.select-valute-left {
-    margin-right: 50px;
-}
-
