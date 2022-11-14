@@ -32,6 +32,17 @@ export class ConverterFormComponent implements OnInit {
 
   changeDate(event: MatDatepickerInputEvent<Date>) {
     this.store.dispatch(new ChangeCurrentState(event.value!, 'date'));
+ 
+
   }
+
+getFlagPath(flagValue: string){
+
+  return `https://countryflagsapi.com/png/${flagValue.slice(0, -1)}`
+ 
+
 }
+
+}
+
 
