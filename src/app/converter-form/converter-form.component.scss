@@ -1,9 +1,27 @@
-.select-valute {
-    
-    padding: 20px;
-    margin: 20px;
+%form-parent-class {
     display: flex;
-    justify-content: center;
-   
+
+    font-size: x-large;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
+.input-valute,
+.select-valute {
+@extend %form-parent-class;
+}
+
+
+
+.icon {
+   display: flex;
+   align-self:center;
+  
+}
+
+.date-field {
+    margin-left: 20px;
+    font-size:small;
+    
+    
+}

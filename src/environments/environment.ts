@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  CURRENCY: {
+    url: 'https://api.getgeoapi.com/v2/currency',
+    apiKey: 'bf523fb044a11114964daa3d15169f601afc4eca',
+  },
 };
 
 /*
