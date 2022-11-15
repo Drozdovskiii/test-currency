@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
-import { environment } from 'src/environments/environment';
+import { environment } from '../environments/environment';
 import { ICurrencyConversionParams, ICurrencyConversionResponse } from './app-currency.models';
 import { ICurrencyResult, ICurrentState } from './state/convertor.models';
 import { IConvercySide } from './utils/check-convercy-side';

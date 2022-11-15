@@ -11,7 +11,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { NgxsModule } from '@ngxs/store';
-import { environment } from 'src/environments/environment';
+import { environment } from '../environments/environment';
 import { ConvertorState } from './state/convertor.state';
 import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { MatDatepickerModule } from '@angular/material/datepicker';
