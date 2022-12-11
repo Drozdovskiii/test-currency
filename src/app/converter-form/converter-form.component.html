@@ -7,7 +7,7 @@
 
       <div class="select-valute-left">
 
-        <mat-form-field appearance="fill">
+        <mat-form-field class="test" appearance="fill">
           <mat-label>Выберите валюту</mat-label>
           <mat-select matNativeControl required [value]="(currentState$ | async)?.leftCurrency"
             (valueChange)="changeValue($event, 'leftCurrency')">
@@ -15,7 +15,7 @@
             <mat-option *ngFor="let currency of currencies$ | async" [value]="currency.value">
               <img [src]="getFlagPath(currency.value)" style="height: 18px"
                 onerror="this.onerror = null; 
-              this.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEBbSVxcpEyRn-BgUu7Sxrdtpq6yq7c30pm6m2xPMLHiJOad4rNzaZ3fATrCrGcy3oY&usqp=CAU'">
+              this.src = 'https://www.nicepng.com/png/detail/15-156393_banner-svg-swallowtail-shape-of-a-flag.png'">
 
               <strong>{{ currency.value }}</strong> - {{ currency.label }}
 
@@ -36,7 +36,7 @@
             <mat-option *ngFor="let currency of currencies$ | async" [value]="currency.value">
               <img [src]="getFlagPath(currency.value)" style="height: 18px"
                 onerror="this.onerror = null; 
-              this.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyEBbSVxcpEyRn-BgUu7Sxrdtpq6yq7c30pm6m2xPMLHiJOad4rNzaZ3fATrCrGcy3oY&usqp=CAU'">
+              this.src = 'https://www.nicepng.com/png/detail/15-156393_banner-svg-swallowtail-shape-of-a-flag.png'">
 
               <strong>{{ currency.value }}</strong> - {{ currency.label }}
 
@@ -59,7 +59,7 @@
       </div>
       <mat-icon class="icon" fontIcon="swap_horiz"></mat-icon>
 
-      <div class="inpit-valute-right">
+      <div class="input-valute-right">
         <mat-form-field appearance="fill">
           <input type="number" matInput placeholder="Введите валюту"
             [value]="(currentState$ | async)?.rightCurrencyAmount"
