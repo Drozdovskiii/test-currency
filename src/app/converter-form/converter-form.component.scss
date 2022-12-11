@@ -1,27 +1,66 @@
 %form-parent-class {
     display: flex;
-
+    justify-content: center;
     font-size: x-large;
     margin-top: 20px;
     margin-left: 20px;
 }
 
+%backgroundAnimation {
+    background-color: rgb(254, 255, 202);
+    border: 2px solid gray;
+    border-radius: 15px;
+}
+
+%backgroundAnimation-hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 5px 5px rgb(255, 226, 64);
+    transition: 300ms;
+}
+
 .input-valute,
 .select-valute {
-@extend %form-parent-class;
+    @extend %form-parent-class;
 }
 
 
 
 .icon {
-   display: flex;
-   align-self:center;
-  
+    display: flex;
+    align-self: center;
+
 }
 
 .date-field {
-    margin-left: 20px;
-    font-size:small;
-    
-    
+    width: min-content;
+    margin: auto;
+    margin-top: 20px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    background-color: rgb(254, 255, 202);
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.date-field:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 5px 5px rgb(255, 226, 64);
+    transition: 300ms;
+}
+
+.select-valute-left,
+.select-valute-right,
+.input-valute-left,
+.input-valute-right {
+    @extend %backgroundAnimation;
+}
+
+
+.select-valute-left:hover,
+.select-valute-right:hover,
+.input-valute-left:hover,
+.input-valute-right:hover {
+    @extend %backgroundAnimation-hover;
+
 }
